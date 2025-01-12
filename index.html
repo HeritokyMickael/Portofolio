@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developpeur junior</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <h2>RANDRIAMIHARISOA <span id="Prenom">Heritoky</span></h2>
+        
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#A_propos">A propos</a></li>
+                <li><a href="#Mes_Projets">Projets</a></li>
+                <li><a href="#competence">Competance</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+       <section id="accueil">
+        <div class="acc01">
+            <p>Je suis <span id="Prenom">Heritoky</span>, Développeur en devenir
+                passionné par le web et le design !
+            </p>
+                <a href="#Mes_Projets">
+                    <button class="Mes_Projets_button boutton_hover style_commun"> Voir mes projets</button>
+                </a>
+        </div>
+        <div class="acc02">
+            <img src="asset/program.jpg" alt="dcliq">
+        </div>
+            
+            
+       </section>
+
+        <section id="A_propos">
+            <h2 class="Titre">&Agrave; propos</h2>
+            <div class="apropos_contenu">
+                <div >
+                    <p>Je m'appelle <span> Randriamiharisoa </span>  , passionné par la 
+                        création de sites web modernes est interavtifs
+                    </p>
+                    <p>
+                        Je suis actuellement étudiant en <span>développement web </span> ,
+                        et je cherche à amélioire mes compétence en Javascript, HTML, CSS.
+                    </p>
+                    <p>
+                        J'adore transformer mes idées en projets concrets et expérimenter 
+                        avec les nouvelles technologies.
+                    </p>
+                    <a href="asset/cv.pdf" download>
+                        <button class="download-btn boutton_hover style_commun">Télécharger mon CV</button>
+                    </a>
+                </div>
+                <div>
+                    <img src="asset/hery01.jpg" alt="Photos_profil" id="PDP">
+                </div>
+            </div>
+        </section>
+
+        <section id="Mes_Projets">
+            <h2 class="Titre">Mes Projets</h2>
+            <div class="projets">
+                <div class="Projet01 taille_Projet">
+                    <p class="paragraphe_projet">
+                        Un mini-jeu interactif en Javascript qu'utiliser des événements DOM
+                    </p>
+                    <p> #HTML #CSS #Js</p>
+                    <a href="pages_project/project01.html">
+                        <button type="button" class="boutton_voir boutton_hover style_commun">Voir</button>
+                    </a>
+                </div>
+                <div class="Projet03 taille_Projet">
+                    <p class="paragraphe_projet">
+                        une autres projet personnel avec HTML, CSS, Javascript, en attente qui va compléter
+                        ce section.
+                        
+                    </p>
+                    <p> #HTML #CSS #Js</p>
+                    <a href="pages_project/project02.html">
+                        <button type="button" class="boutton_voir boutton_hover style_commun">Voir</button>
+                    </a>
+                </div>
+                <div class="Projet02 taille_Projet">
+                    <p class="paragraphe_projet">
+                        Un mini-jeu interactif en Javascript qu'utiliser des événements DOM
+                    </p>
+                    <p> #HTML #CSS #Js</p>
+                    <a href="pages_project/project03.html">
+                        <button type="button" class="boutton_voir boutton_hover style_commun">Voir</button>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="competence">
+            <h2 class="Titre Titre_noir">Mes Compétence</h2>
+            <div class="Tous_competence">
+                <div class="Competance_inter">
+                    <h3>Compétences interpersonnelles</h3>
+                    <ul>
+                        <li>Gestion de projet</li>
+                        <div class="Competance01-container">
+                            <div class="bar-competence comptence_projet"></div>
+                        </div>
+                        <li>Résolution de probléme</li>
+                        <div class="Competance01-container">
+                            <div class="bar-competence comptence_Probleme"></div>
+                        </div>
+                        <li>adaptabilité</li>
+                        <div class="Competance01-container">
+                            <div class="bar-competence comptence_adaptabilité"></div>
+                        </div>
+                    </ul>
+                
+                </div>
+                <div class="Competance_tec">
+                    <h3>Compétences techniques</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <div class="Competance01-container">
+                            <div class="bar-competence comptence_html"></div>
+                        </div>
+                        <li>CSS</li>
+                        <div class="Competance01-container">
+                            <div class="bar-competence comptence_css"></div>
+                        </div>
+                        <li>Javascript</li>
+                        <div class="Competance01-container">
+                            <div class="bar-competence comptence_js"></div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="Contact">
+                <h1> Vous avez un <span> projet en tête?</span></h1>
+                <h2>N'hésitez pas à me <span>contacter</span></h2>
+
+                <form action="" class="formulaire">
+                    <div class="nom_prenom">
+                        <div class="aligne_nom">
+                            <Label for="contact_prenom"> Votre prénom</Label>
+                            <input type="text" name="contact_prenom" id="contact_prenom" placeholder="Michel">
+                        </div>
+                        <div class="aligne_nom aligne_premon">
+                            <Label for="contact_Nom"> Votre nom</Label>
+                            <input type="text" name="contact_Nom" id="contact_Nom" placeholder="Dupont">
+                        </div>
+                    </div>
+                    <div class="sujet">
+                        <Label for="contact_Projet">Votre sujet</Label>
+                        <input type="text" name="contact_Projet" id="contact_Projet" placeholder="Developpement d'un site vitrine">
+                        <textarea name="contact_Projet" id="message" cols="30" rows="10" placeholder="Envoyer une message"></textarea> 
+                    </div>
+                    <input type="submit" value="Envoyer" class="envoyer-button boutton_hover style_commun">
+
+                </form>
+        </section>
+        <img src="asset/retour haut.png" alt="retour_en_haut" id="retour_en_haut">
+    </main>
+    
+    <footer>
+        <p> Designed by <span>Heritoky </span>
+        with HTML CSS JS
+        </p>
+        <p>Tous droits réservés - 2025</p>
+
+    </footer>
+    
+    <script src="index.js"></script>
+</body>
+</html>

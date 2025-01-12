@@ -1,0 +1,359 @@
+/* styles.css */
+:root{
+    --primairy-color: #000000ee;
+    --secondary-color: #3adae6;
+    --text-color-button: white;
+    --radus-button: 5%;
+    --bordure-radius-button: 5px;
+    --text-color-principale: white;
+    --texte-taille-button: 30px;
+    --texte-en-gras: bolder;
+    --boutton-survoler: rgb(34, 155, 163);
+
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+span{
+    color: var(--secondary-color)
+}
+
+
+
+header{
+    margin: 0;
+    height: 30%;
+    background-color: var(--primairy-color);
+    color: var(--text-color-principale);
+    display: grid;
+    grid-template-columns:  2fr 2fr;
+    
+    
+
+}
+#Prenom{
+    color: var(--secondary-color);
+}
+header>nav>ul{
+    display: flex;
+    justify-content: center;
+}
+header>nav>ul>li{
+       
+    padding: 3%;
+    padding-top: 10%;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    font-weight: var(--texte-en-gras);
+    font-size: 10px;
+}
+header>nav>ul>li:hover{
+       
+    color: var(--secondary-color);
+}
+header>nav>ul>li>a{
+    text-decoration: none;
+    color: inherit;
+}
+.acc02>img{
+       
+    width: 300px;
+    height: 300px;
+    
+}
+
+header>h2{
+    
+    margin: 0;
+    padding: 5%;
+    padding-top: 10%;
+}
+
+
+
+/*style de main*/
+
+#accueil{
+    height: 400px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    padding-top: 10%;
+}
+#accueil>div>p{
+    font-size: 30px;
+    justify-content: center;
+}
+#accueil>div{
+    display: flex;
+    flex-direction: column;
+ 
+    text-align: center;
+    font-size: 40px;
+    
+}
+.Mes_Projets_button{
+    background-color: var(--secondary-color);
+    color: var(--text-color-button);
+    border: none;
+    border-radius: var(--bordure-radius-button);
+    font-size: var(--texte-taille-button);
+    font-weight: var(--texte-en-gras);
+    padding: 1%;
+    
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+ 
+}
+
+
+/*style a propos*/
+.apropos_contenu{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+}
+.apropos_contenu > div >p{
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 20%;
+}
+.download-btn{
+    background-color: var(--secondary-color);
+    margin-left: 10%;
+    margin-right: 20%;
+    background-color: var(--secondary-color);
+    color: var(--text-color-button);
+    border: none;
+    border-radius: var(--bordure-radius-button);
+    font-size: 20px;
+    font-weight: var(--texte-en-gras);
+    padding: 1%;
+    
+   
+    
+}
+
+#PDP{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+/*style mes projet*/
+.projets{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-left: 2%;
+    font-size: 20px;
+  
+}
+
+
+.boutton_voir{
+    background-color: var(--secondary-color);
+    margin-left: 10%;
+    margin-right: 20%;
+    background-color: var(--secondary-color);
+    color: var(--text-color-button);
+    border: none;
+    border-radius: var(--bordure-radius-button);
+    font-size: 20px;
+    font-weight: var(--texte-en-gras);
+    padding: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: pointer;
+    
+}
+
+
+
+/*style section competance */
+.Tous_competence{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Competance01-container {
+    width: 80%;              
+    height: 10px;             
+    background-color: white; 
+    border: 2px solid #ccc;   
+    border-radius: 5px;     
+    margin: 20px 0;          
+}
+
+
+.bar-competence {
+    height: 100%;    
+    background-color: var(--secondary-color);  
+    border-radius: 5px;     
+}
+
+
+.comptence_html {
+    width: 90%; 
+}
+
+
+.comptence_css {
+    width: 70%; 
+}
+
+
+.comptence_js {
+    width: 60%; 
+}
+
+.Competance_inter{
+    background-color: azure;
+    margin: 5%;
+    padding: 5%;
+}
+.Competance_tec{
+    background-color: azure;
+    margin: 5%;
+    padding: 5%;
+}
+.comptence_projet , .comptence_Probleme {
+    width: 70%;
+} 
+.comptence_adaptabilité{
+    width: 90%;
+}
+
+/*contact*/
+
+
+#Contact{
+    background-color: var(--primairy-color);
+    color: var(--text-color-button);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+
+}
+#Contact >h1{
+    font-size: 40px;
+
+}
+#Contact >h2{
+    font-size: 30px;
+
+}
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+   
+}
+.nom_prenom{
+    display: flex;
+    margin-left: 3%;
+    
+}
+.aligne_nom{
+    display: flex;
+    flex-direction: column;
+}
+.aligne_premon{
+    margin-left: 23%;
+}
+.sujet{
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+}
+
+#contact_Projet{
+    margin-bottom: 5%;
+}
+.envoyer-button{
+    background-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--text-color-button);
+    border: none;
+    border-radius: var(--bordure-radius-button);
+    font-size: 25px;
+    font-weight: var(--texte-en-gras);
+    width: 30%;
+    padding: 0;
+    margin-left: 150px;
+    margin-bottom: 5%;
+}
+#contact_Projet_message{
+    height: 200px;
+}
+
+/*style titre*/
+.Titre{
+    color: var(--secondary-color);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+.Titre_noir{
+    color: var(--primairy-color);
+}
+/*style effet au boutton et style commun */
+.boutton_hover:hover{
+    background-color: var(--boutton-survoler);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.14); /* Ombre au survol */
+    transform: translateY(-2px);
+}
+.style_commun{
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.taille_Projet{
+
+    background-color: #f3f3f3;
+    border-radius: var(--bordure-radius-button);
+    padding: 5%;
+    text-align: center;
+    height: 200px;
+
+}
+.taille_Projet > .paragraphe_projet{
+    overflow-y: auto;
+    height: 40%;
+
+}
+.taille_Projet:hover{
+    
+    transform: translateY(-5px); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+#retour_en_haut{
+    width: 30px;
+    height: 30px;
+    z-index: 9999;
+    cursor: pointer;
+    position: fixed;    
+    bottom: 60px;       
+    right: 20px;
+    transform: rotate(90deg)
+    
+    
+}
+
+/*style pour le pied du page*/
+
+footer{
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+      }
+
+
