@@ -11,7 +11,7 @@ retourEnHaut.onclick = function () {
 
 var i =0;
 var txt ='Bienvenue sur mon portfolio';
-var speed= 200;
+var speed= 400;
 
 function MachineEcrire(){
     if( i < txt.length){
