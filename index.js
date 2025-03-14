@@ -9,9 +9,16 @@ retourEnHaut.onclick = function () {
     });
 };
 
-window.onload = function() {
-    setTimeout(function() {
-        alert("Bienvenue sur Mon portofolio cher visiteur !");
-    }); 
-};
+var i =0;
+var txt ='Bienvenue sur mon portfolio';
+var speed= 200;
 
+function MachineEcrire(){
+    if( i < txt.length){
+        document.getElementById("typewriter").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(MachineEcrire , speed);
+    }
+}
+
+MachineEcrire();

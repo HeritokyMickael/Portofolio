@@ -146,12 +146,68 @@ header>h2{
 }
 /*style mes projet*/
 .projets{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    margin-left: 2%;
+    display: flex;
+    flex-direction: row;
     font-size: 20px;
+    animation: slide 60s ease-in-out infinite;
   
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+      }
+      10% {
+        transform: translateX(-25%); /* Défilement rapide */
+      }
+      20% {
+        transform: translateX(-25%); /* S'arrêter ici pendant 5s */
+      }
+      30% {
+        transform: translateX(-50%); /* Défilement du prochain projet */
+      }
+      40% {
+        transform: translateX(-50%); /* S'arrêter ici pendant 5s */
+      }
+      50% {
+        transform: translateX(-100%); /* Défilement du projet suivant */
+      }
+      60% {
+        transform: translateX(-100%); /* Pause à nouveau pendant 5s */
+      }
+      70% {
+        transform: translateX(-150%); /* Défilement du prochain projet */
+      }
+      80% {
+        transform: translateX(-150%); /* Pause encore pendant 5s */
+      }
+      90% {
+        transform: translateX(-200%); /* Dernier défilement */
+      }
+      100% {
+        transform: translateX(-200%); /* Retour à la position initiale */
+      }
+}
+.taille_Projet{
+
+    background-color: #f3f3f3;
+    border-radius: var(--bordure-radius-button);
+    padding: 5%;
+    text-align: center;
+    width: 400px;
+    height: 200px;
+    margin: 2%;
+
+}
+.taille_Projet > .paragraphe_projet{
+    overflow-y: auto;
+    height: 40%;
+    width: 300px;
+
+}
+.taille_Projet:hover{
+    
+    transform: translateY(-5px); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -210,16 +266,29 @@ header>h2{
 .comptence_js {
     width: 60%; 
 }
+.comptence_Mysql {
+    width: 40%; 
+}
+.competence_Networking{
+    width: 60%; 
+}
+.competence_Py{
+    width: 45%; 
+}
+
 
 .Competance_inter{
     background-color: azure;
     margin: 5%;
     padding: 5%;
+    height: 300px;
 }
 .Competance_tec{
+    height: 300px;
     background-color: azure;
     margin: 5%;
     padding: 5%;
+    overflow-y: auto;
 }
 .comptence_projet , .comptence_Probleme {
     width: 70%;
@@ -314,25 +383,7 @@ header>h2{
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
-.taille_Projet{
 
-    background-color: #f3f3f3;
-    border-radius: var(--bordure-radius-button);
-    padding: 5%;
-    text-align: center;
-    height: 200px;
-
-}
-.taille_Projet > .paragraphe_projet{
-    overflow-y: auto;
-    height: 40%;
-
-}
-.taille_Projet:hover{
-    
-    transform: translateY(-5px); 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-}
 #retour_en_haut{
     width: 30px;
     height: 30px;
@@ -356,4 +407,32 @@ footer{
     margin-right: 5%;
       }
 
+
+/*typewrite*/
+
+#typewriter{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    display: inline-block;
+    border-right: 3px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: barNoir 1s step-end infinite;
+}
+
+
+
+@keyframes barNoir{
+
+    0%{
+        border-color: transparent;
+    }
+    50%{
+        border-color: black;
+    }
+    100%{
+        border-color: transparent;
+    }
+} 
+    
 
