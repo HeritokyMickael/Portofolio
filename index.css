@@ -149,43 +149,12 @@ header>h2{
     display: flex;
     flex-direction: row;
     font-size: 20px;
-    animation: slide 60s ease-in-out infinite;
-  
+    animation: slide 10s linear infinite;
 }
+
 @keyframes slide {
-    0% {
-        transform: translateX(0);
-      }
-      10% {
-        transform: translateX(-25%); /* Défilement rapide */
-      }
-      20% {
-        transform: translateX(-25%); /* S'arrêter ici pendant 5s */
-      }
-      30% {
-        transform: translateX(-50%); /* Défilement du prochain projet */
-      }
-      40% {
-        transform: translateX(-50%); /* S'arrêter ici pendant 5s */
-      }
-      50% {
-        transform: translateX(-100%); /* Défilement du projet suivant */
-      }
-      60% {
-        transform: translateX(-100%); /* Pause à nouveau pendant 5s */
-      }
-      70% {
-        transform: translateX(-150%); /* Défilement du prochain projet */
-      }
-      80% {
-        transform: translateX(-150%); /* Pause encore pendant 5s */
-      }
-      90% {
-        transform: translateX(-200%); /* Dernier défilement */
-      }
-      100% {
-        transform: translateX(-200%); /* Retour à la position initiale */
-      }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }
 .taille_Projet{
 
